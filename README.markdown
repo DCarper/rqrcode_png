@@ -8,7 +8,7 @@ rqrcode_png ties the two libraries together. rqrcode_png assumes as little as po
 ## Usage
 qrqcode_png extends RQRCode::QRCode with one simple method, #to_img.
 
-#to_img returns an instance of ChunkyPNG. The image itself is 37x37 pixels which includes a 2 pixel border, which can easily be resized and saved.
+\#to_img returns an instance of ChunkyPNG. The image itself is 37x37 pixels which includes a 2 pixel border, which can easily be resized and saved.
 
 ```ruby
 qr = RQRCode::QRCode.new( 'my string to generate', :size => 4, :level => :h )
