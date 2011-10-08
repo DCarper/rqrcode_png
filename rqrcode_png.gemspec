@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["dcarper@dreamagile.com"]
   s.homepage    = ""
   s.summary     = %q{Produces a .png from a given QR Code}
-  s.description = %q{Glues RQRCode together with chunky_png}
+  s.description = %q{Glues rQRCode together with chunky_png}
 
   s.rubyforge_project = "rqrcode_png"
 
