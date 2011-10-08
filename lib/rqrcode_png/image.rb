@@ -3,8 +3,8 @@ module RQRCodePNG
 		BORDER				 = 2
 		IMG_SIZE			 = 33
 		TOTAL_IMG_SIZE = IMG_SIZE + BORDER * 2
-		BLACK					 = ::ChunkyPNG::Color::WHITE
-		WHITE					 = ::ChunkyPNG::Color::BLACK
+		BLACK					 = ::ChunkyPNG::Color::BLACK
+		WHITE					 = ::ChunkyPNG::Color::WHITE
 
 		attr_accessor :qr_code
 		
