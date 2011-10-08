@@ -1,6 +1,9 @@
+require "chunky_png"
+require 'rqrcode'
+
 require "rqrcode_png/version"
-require_relative "rqrcode_png/image"
-require_relative "rqrcode_png/qrcode_extensions"
+require "rqrcode_png/image"
+require "rqrcode_png/qrcode_extensions"
 
 module RQRCodePng
   # Your code goes here...
