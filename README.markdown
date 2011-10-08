@@ -6,7 +6,9 @@ rQRcode is a great library that generates the 2D sequence of a QR code, and chun
 rqrcode_png ties the two libraries together. rqrcode_png assumes as little as possible.
 
 ## Usage
-qrqcode_png proves extends RQRCode::QRCode with one simple method, #to_img. This returns an instance of ChunkyPNG. The image itself is 37x37 pixels which includes a 2 pixel border, suitable for resizing.
+qrqcode_png extends RQRCode::QRCode with one simple method, #to_img.
+
+#to_img returns an instance of ChunkyPNG. The image itself is 37x37 pixels which includes a 2 pixel border, which can easily be resized and saved.
 
 ```ruby
 qr = RQRCode::QRCode.new( 'my string to generate', :size => 4, :level => :h )
