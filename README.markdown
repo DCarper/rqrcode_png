@@ -17,9 +17,14 @@ png = qr.to_img												# returns an instance of ChunkyPNG
 png.resize(90, 90).save("really_cool_qr_image.png")
 ```
 
-## Rails
+### Bundler
+```ruby
+gem 'rqrcode_png'
+```
 
-### With [DragonFly](https://github.com/markevans/dragonfly)
+### Rails
+
+#### With [DragonFly](https://github.com/markevans/dragonfly)
 
 ```ruby
 # app/models/product.rb
