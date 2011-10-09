@@ -5,8 +5,6 @@
 **Solution:** rqrcode_png
 
 #### Description
-rqrcode_png makes use of very awesome libraries rqrcode, and chunky_png. 
-
 rQRcode is a great library that generates the 2D sequence of a QR code, and chunky_png is a great pure ruby library for generating and manipulating images.
 
 rqrcode_png ties the two libraries together. rqrcode_png assumes as little as possible.
@@ -17,7 +15,7 @@ rqrcode_png ties the two libraries together. rqrcode_png assumes as little as po
 require 'rqrcode_png'
 
 qr = RQRCode::QRCode.new( 'my string to generate', :size => 4, :level => :h )
-png = qr.to_img																					# instance of ChunkyPNG
+png = qr.to_img																					# instance of chunky_png methods
 png.resize(90, 90).save("really_cool_qr_image.png")
 ```
 
