@@ -4,11 +4,6 @@
 **Problem:** You need to generate your own supercool QR code images  
 **Solution:** rqrcode_png
 
-#### Description
-rQRcode is a great library that generates the 2D sequence of a QR code, and chunky_png is a great pure ruby library for generating and manipulating images.
-
-rqrcode_png ties the two libraries together. rqrcode_png assumes as little as possible.
-
 ## Usage
 
 ```ruby
