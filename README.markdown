@@ -1,8 +1,11 @@
 # rqrcode_png
 
 ## Overview
-**Problem:** You need to generate your own supercool QR code images  
+**Problem:** You need to generate your own QR code images  
 **Solution:** rqrcode_png
+
+rqrcode_png extends [rqrcode](https://github.com/whomwah/rqrcode), adding one simple method to instances of QRCode, **\#to_img**. [ChunkyPNG](https://github.com/wvanbergen/chunky_png) is used to generate the image itself in pure Ruby. As few assumptions are made as possible regarding the image itself.
+
 
 ## Usage
 
@@ -10,7 +13,7 @@
 require 'rqrcode_png'
 
 qr = RQRCode::QRCode.new( 'my string to generate', :size => 4, :level => :h )
-png = qr.to_img																					# instance of chunky_png methods
+png = qr.to_img												# returns an instance of ChunkyPNG
 png.resize(90, 90).save("really_cool_qr_image.png")
 ```
 
@@ -49,6 +52,5 @@ end
 * Don't touch the .gemspec, I'll do that when I release a new version
 
 ## Copyright
-
 MIT Licence (http://www.opensource.org/licenses/mit-license.html)
 
