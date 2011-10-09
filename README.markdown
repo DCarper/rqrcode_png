@@ -19,7 +19,7 @@ png.resize(90, 90).save("really_cool_qr_image.png")
 
 ## Rails
 
-### With Dragonfly
+### With [DragonFly](https://github.com/markevans/dragonfly)
 
 ```ruby
 # app/models/product.rb
