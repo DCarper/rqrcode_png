@@ -1,8 +1,8 @@
 # rqrcode_png
-## Overview
 **Problem:** You need to generate your own QR code images  
 **Solution:** rqrcode_png
 
+## Overview
 rqrcode_png extends [rqrcode](https://github.com/whomwah/rqrcode), adding one simple method to instances of QRCode, **\#to_img**. [ChunkyPNG](https://github.com/wvanbergen/chunky_png) is used to generate the image itself in pure Ruby. As few assumptions are made as possible regarding the image itself.
 
 
