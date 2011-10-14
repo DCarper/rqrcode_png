@@ -16,7 +16,7 @@ png = qr.to_img												# returns an instance of ChunkyPNG
 png.resize(90, 90).save("really_cool_qr_image.png")
 ```
 
-*NOTE:* For now, the :size of the QR code has to be 4. This will soon be fixed.
+*NOTE:* For now, the :size of the QR code has to be 5 or less. Working on this.
 
 ### Bundler
 ```ruby

@@ -20,5 +20,18 @@ module RQRCodePNG
 
 		end
 
+		#
+		# returns the image size by looking at how long the first line of the code is
+		#
+		def img_size
+			@img_size ||= @qr_code.to_s.split("\n").first.size()
+		end
+
+		#
+		# Returns the border, 1/10 of the img size
+		def border_width()
+			@border ||= img_size() / 10
+		end
+
 	end
 end
