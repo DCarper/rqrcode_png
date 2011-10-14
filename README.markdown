@@ -16,6 +16,8 @@ png = qr.to_img												# returns an instance of ChunkyPNG
 png.resize(90, 90).save("really_cool_qr_image.png")
 ```
 
+*NOTE:* For now, the :size of the QR code has to be 4. This will soon be fixed.
+
 ### Bundler
 ```ruby
 gem 'rqrcode_png'
@@ -34,7 +36,7 @@ end
 
 ```ruby
 # somewhere
-qr_code_img = RQRCode::QRCode.new('http://www.google.com/').to_img
+qr_code_img = RQRCode::QRCode.new('http://www.google.com/', :size => 4, :level => :h ).to_img
 @product.update_attribute :qr_code, qr_code_img.to_string
 ```
 
