@@ -6,10 +6,8 @@ module RQRCodePNG
 		BLACK					 = ::ChunkyPNG::Color::BLACK
 		WHITE					 = ::ChunkyPNG::Color::WHITE
 
-		attr_accessor :qr_code
-		
 		def initialize(qr_code)
-			self.qr_code = qr_code
+			@sequence = Sequence.new(qr_code)
 		end
 
 		#
@@ -18,7 +16,7 @@ module RQRCodePNG
 		def render
 			png = blank_img()
 
-			qr_code().dark_squares_only do |x, y|
+			@sequence.dark_squares_only do |x, y|
 				png[y + BORDER, x + BORDER] = BLACK
 			end
 
