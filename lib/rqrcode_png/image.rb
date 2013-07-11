@@ -3,8 +3,8 @@ module RQRCodePNG
     BLACK = ::ChunkyPNG::Color::BLACK
     WHITE = ::ChunkyPNG::Color::WHITE		
 
-    def initialize(qr_code)
-      @sequence = Sequence.new(qr_code)
+    def initialize(qr_code, border_width=nil)
+      @sequence = Sequence.new(qr_code, border_width)
     end
 
     # Returns an image file of the QR Code
