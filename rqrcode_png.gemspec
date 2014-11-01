@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "rqrcode_png"
   s.version     = RqrcodePng::VERSION
   s.authors     = ["Dan Carper"]
-  s.email       = ["dcarper@dreamagile.com"]
+  s.email       = ["djcarper@me.com"]
   s.homepage    = ""
   s.summary     = %q{Produces a .png from a given QR Code}
   s.description = %q{Glues rQRCode together with chunky_png}
