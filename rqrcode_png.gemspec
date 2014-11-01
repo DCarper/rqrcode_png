@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Produces a .png from a given QR Code}
   s.description = %q{Glues rQRCode together with chunky_png}
+  s.license     = ['mit']
 
   s.rubyforge_project = "rqrcode_png"
 
