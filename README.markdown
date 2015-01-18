@@ -30,7 +30,7 @@ gem 'rqrcode_png'
 ```ruby
 # app/models/product.rb
 class Product < ActiveRecord::Base
-  image_accessor :qr_code
+  dragonfly_accessor :qr_code
 end
 ```
 
