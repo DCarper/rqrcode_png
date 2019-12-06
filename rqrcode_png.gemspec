@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
 
 	s.add_development_dependency "rake"
 	s.add_dependency "chunky_png"
-	s.add_dependency "rqrcode"
+	s.add_dependency "rqrcode", "< 1.0.0"
 
 end
